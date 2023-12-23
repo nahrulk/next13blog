@@ -1,3 +1,25 @@
 .container {
-  background-color: #556699;
+  display: flex;
+  justify-content: space-between;
+  height: 100px;
+  align-items: center;
+}
+
+.logo {
+  font-weight: bold;
+  font-size: 22px;
+}
+
+.links {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.logout {
+  padding: 5px;
+  border: none;
+  color: white;
+  border-radius: 3px;
+  background: #ff7f0a;
 }

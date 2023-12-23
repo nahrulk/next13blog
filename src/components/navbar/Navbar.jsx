@@ -7,14 +7,21 @@ import styles from "./navbar.module.css";
 const Navbar = () => {
   return (
     <div className={styles.container}>
-      <Link href={"/"}>*Rulblog</Link>
-      <div>
+      <Link href={"/"} className={styles.logo}>
+        Rulblog &#10024;
+      </Link>
+      <div className={styles.links}>
         {links.map((link) => (
-          <Link href={`${link.url}`} key={link.id}>
+          <Link href={`${link.url}`} key={link.id} className={styles.link}>
             {link.title}
           </Link>
         ))}
-        <button onClick={() => console.log("log out")}>Logout</button>
+        <button
+          onClick={() => console.log("log out")}
+          className={styles.logout}
+        >
+          Logout
+        </button>
       </div>
     </div>
   );
