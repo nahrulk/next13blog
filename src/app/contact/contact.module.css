@@ -1,3 +1,60 @@
 .container {
-  background: red;
+  /* display: flex;
+  flex-direction: column;
+  justify-items: center; */
+}
+
+.title {
+  font-size: 60px;
+  margin-bottom: 100px;
+  text-align: center;
+}
+
+.content {
+  display: flex;
+  align-items: center;
+  gap: 100px;
+}
+
+.imgContainer,
+.form {
+  flex: 1;
+}
+
+.imgContainer {
+  height: 500px;
+  position: relative;
+}
+
+.img {
+  object-fit: contain;
+  animation: move ease 3s infinite alternate;
+}
+
+@keyframes move {
+  from {
+    transform: translateY(-15px);
+  }
+
+  to {
+    transform: translateX(0) scale(1.03);
+  }
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.input,
+.textarea {
+  background-color: transparent;
+  padding: 20px;
+  border: none;
+  outline: none;
+  color: #bbb;
+  border: 3px solid #bbb;
+  font-size: 20px;
+  font-weight: bold;
 }

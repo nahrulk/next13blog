@@ -18,7 +18,6 @@ export default function Home() {
         <Image
           src={Hero}
           alt="A person working on a computer"
-          objectFit="cover"
           className={styles.img}
         />
       </div>
