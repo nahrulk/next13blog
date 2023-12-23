@@ -21,5 +21,5 @@
   border: none;
   color: white;
   border-radius: 3px;
-  background: #ff7f0a;
+  background: var(--primary-color);
 }
