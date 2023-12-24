@@ -7,7 +7,7 @@ export default function Home() {
   return (
     <div className={styles.container}>
       <div className={styles.item}>
-        <h1 className={styles.title}>Welcome To my Blog, Bruuh!</h1>
+        <h1 className={"homeTitle"}>Welcome To my Blog, Bruuh!</h1>
         <p className={styles.desc}>
           People come and go, but you now come. how lucky you are to know me
           &#128523;
