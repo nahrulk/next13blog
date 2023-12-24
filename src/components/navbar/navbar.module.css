@@ -16,6 +16,10 @@
   align-items: center;
 }
 
+.link:hover {
+  color: var(--primary-color);
+}
+
 .logout {
   padding: 5px;
   border: none;

@@ -1,3 +1,55 @@
-.container {
-  background-color: teal;
+.mainTitle {
+  font-size: 100px;
+}
+
+.container {}
+
+.selectTitle {
+  margin: 20px 0px;
+}
+
+.items {
+  display: flex;
+  gap: 50px;
+}
+
+.item {
+  border: 5px solid #bbb;
+  border-radius: 5px;
+  height: 400px;
+  width: 300px;
+  position: relative;
+  background-size: cover !important;
+}
+
+.item:hover .title {
+  color: var(--primary-color);
+}
+
+.item:nth-child(1) {
+  background: url("/illustration.jpg");
+}
+
+.item:nth-child(2) {
+  background: url("/websites.jpg");
+}
+
+.item:nth-child(3) {
+  background: url("/apps.jpg");
+}
+
+.title {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  font-size: 40px;
+  font-weight: bold;
+  /* color: #fff; */
+}
+
+.blackback {
+  width: 100%;
+  height: 100%;
+  opacity: 0.6;
+  background-color: #000;
 }

@@ -1,3 +1,42 @@
-.container {
-  background-color: orange;
+.container {}
+
+.catTitle {
+  color: var(--primary-color);
+}
+
+.item {
+  display: flex;
+  gap: 50px;
+  margin-top: 50px;
+  margin-bottom: 10px;
+}
+
+.item:nth-child(2n+1) {
+  flex-direction: row-reverse;
+}
+
+.content {
+  flex: 1;
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.title {
+  font-size: 40px;
+}
+
+.desc {
+  font-size: 20px;
+}
+
+.imgContainer {
+  flex: 1;
+  height: 500px;
+  position: relative;
+}
+
+.img {
+  object-fit: cover;
 }
